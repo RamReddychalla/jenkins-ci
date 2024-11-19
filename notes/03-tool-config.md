@@ -6,8 +6,8 @@ Navigate to the following path:
 
 ```mermaid
 graph TD;
-  Jenkins Dashboard--> Manage Jenkins;
-  Manage Jenkins --> Tools
+  "Jenkins Dashboard"--> "Manage Jenkins";
+  "Manage Jenkins" --> "Tools"
 ```
 
 #### JDK Installations
