@@ -1,19 +1,30 @@
 # Global Tool configuration
 
-Jenkins Dashboard -> Manage Jenkins ->
-   --> Tools
+#### Jenkins Dashboard
 
-JDK Installations
-  Click "Add JDK" buttin
-  Name = JDK17
-  JAVA_HOME=C:\Program Files\Microsoft\jdk-17.0.13.11-hotspot
+Navigate to the following path: Jenkins Dashboard -> Manage Jenkins -> Tools
 
-Git 
-  Accept the default
+#### JDK Installations
 
-Maven installations
-  Click on "Add Maven"
-  Click to "Uncheck" Install automatically"
-  MAVEN_HOME=C:\apache-maven-3.9.9
+1. Click on the **"Add JDK"** button.
+2. Set the following:
+   - **Name**: `JDK17`
+   - **JAVA_HOME**: `C:\Program Files\Microsoft\jdk-17.0.13.11-hotspot`
 
-Click Save button
+#### Git
+
+- Accept the default settings.
+
+#### Maven Installations
+
+1. Click on **"Add Maven"**.
+2. Click to **uncheck** the "Install automatically" option.
+3. Set the following:
+   - **MAVEN_HOME**: `C:\apache-maven-3.9.9`
+
+#### Save
+
+- Click the **Save** button.
+
+
+
