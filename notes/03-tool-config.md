@@ -2,7 +2,13 @@
 
 #### Jenkins Dashboard
 
-Navigate to the following path: Jenkins Dashboard -> Manage Jenkins -> Tools
+Navigate to the following path: 
+
+```mermaid
+graph TD;
+  Jenkins Dashboard--> Manage Jenkins;
+  Manage Jenkins --> Tools
+```
 
 #### JDK Installations
 
