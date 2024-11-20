@@ -73,3 +73,63 @@ To configure GitHub authentication:
 
 ### Conclusion
 Choosing the right security realm depends on your organization's requirements and existing infrastructure. By configuring appropriate security realms, you can ensure that your Jenkins instance is secure and accessible to authorized users only.
+
+## Jenkins Authorization Options
+
+Authorization in Jenkins determines what actions users can perform once they have been authenticated. Jenkins provides several strategies for defining these permissions. Here are the common authorization options:
+
+### 1. **Anyone can do anything**
+This is the most permissive mode where any user, including anonymous users, has full control over the Jenkins instance.
+
+#### Example:
+- **Use Case**: Suitable for testing purposes or small, internal projects where security is not a primary concern.
+- **Configuration**: No special configuration needed. Simply select this option under **Manage Jenkins** > **Configure Global Security**.
+
+### 2. **Legacy mode**
+This mode offers basic, outdated security settings for backward compatibility. It is not recommended for new installations.
+
+#### Example:
+- **Use Case**: Rarely used, mainly for legacy systems.
+- **Configuration**: Select **Legacy Mode** under **Manage Jenkins** > **Configure Global Security**.
+
+### 3. **Logged-in users can do anything**
+In this mode, all authenticated users have full control over the Jenkins instance. Anonymous users have no permissions.
+
+#### Example:
+- **Use Case**: Suitable for small teams or internal projects where all users are trusted.
+- **Configuration**: Select **Logged-in users can do anything** under **Manage Jenkins** > **Configure Global Security**.
+
+### 4. **Matrix-based security**
+This is a flexible and fine-grained authorization strategy that allows assigning specific permissions to individual users or groups.
+
+#### Example:
+- **Use Case**: Ideal for larger teams where different roles need different permissions.
+- **Configuration**:
+  - Go to **Manage Jenkins** > **Configure Global Security**.
+  - Select **Matrix-based security**.
+  - Add users or groups and assign specific permissions (e.g., read, build, admin).
+
+### 5. **Project-based Matrix Authorization**
+Similar to matrix-based security, but permissions can be defined per project, allowing more granular control.
+
+#### Example:
+- **Use Case**: Useful for multi-project environments where different projects have different security requirements.
+- **Configuration**:
+  - Go to **Manage Jenkins** > **Configure Global Security**.
+  - Select **Project-based Matrix Authorization**.
+  - Configure permissions for each project individually under each project's configuration page.
+
+### 6. **Role-Based Strategy**
+This strategy uses the Role Strategy Plugin to define roles with specific permissions and assign users to these roles.
+
+#### Example:
+- **Use Case**: Ideal for organizations with a structured role hierarchy.
+- **Configuration**:
+  - Install the **Role Strategy Plugin** from the Jenkins update center.
+  - Go to **Manage Jenkins** > **Manage and Assign Roles** > **Manage Roles**.
+  - Define global roles and project roles with specific permissions.
+  - Assign users to these roles under **Manage Jenkins** > **Manage and Assign Roles** > **Assign Roles**.
+
+### Conclusion
+Choosing the right authorization strategy depends on your organization's size, security requirements, and user roles. By configuring the appropriate authorization options, you can ensure that your Jenkins instance is secure and that users have the necessary permissions to perform their tasks efficiently.
+
