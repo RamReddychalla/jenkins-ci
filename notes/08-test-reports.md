@@ -40,8 +40,30 @@ Here’s an example of how to configure a simple Maven project to publish JUnit 
    - Add the **Publish JUnit test result report** post-build action.
    - Enter `**/target/surefire-reports/*.xml` in the **Test report XMLs** field.
 
+### A Sample Jenkins Job (Freestyle project)
+
+```yml
+SCM: 
+    Git-Repository: https://github.com/mahendra-shinde/sample-library-api
+    Branch  : */main
+
+Build Steps:
+	Add-Step: Top Level Maven Target
+	Maven : M3
+	Goal : package 
+
+Post Build Actions:
+	Add-Step: Archive Artifacts
+	Files to archive : target/*.jar 
+
+	Add-Step: Publish JUnit Test Reports
+	File: target/surefire-reports/*.xml
+```
+
+
 ### Conclusion
 
 JUnit test result reports in Jenkins provide valuable insights into the state of your tests. By leveraging these reports, you can track test trends, identify failures, and ensure the overall health of your project.
 
 Using this configuration, you can efficiently manage and monitor the results of your JUnit tests within Jenkins.
+
