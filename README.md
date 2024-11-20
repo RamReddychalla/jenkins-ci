@@ -11,3 +11,4 @@ Sr No | Title | Link
 5 | Sample Project on GitHub Repository | [Link](./notes/05-sample-project-setup.md)
 6 | Jenkins Security (Authentication and Authorization) | [Link](./notes/06-jenkins-security.md)
 7 | Jenkins Jobs : Freestyle Project | [Link](/notes/07-freestyle-jobs.md)
+8 | Collect JUnit Test report | [Link](/notes/08-test-reports.md)
