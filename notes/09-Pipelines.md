@@ -48,19 +48,65 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh 'echo Building...'
+                echo 'Building...'
             }
         }
         stage('Test') {
             steps {
-                sh 'echo Testing...'
+                echo 'Testing...'
             }
         }
         stage('Deploy') {
             steps {
-                sh 'echo Deploying...'
+                echo `Deploying...'
             }
         }
     }
 }
 ```
+
+### How to create pipeline project 
+
+1.  In Jenkins Dashboard, click on `New Item`
+1.  In `Item name` enter `Job5`. In `Item Type` select `Pipeline`
+
+    > If you cant see item type `Pipeline` then you must install `Pipeline` plugin first!
+
+1.  Click `OK` button
+1.  In `Pipeline` type items, you get only three sections
+
+    - General : Similar to `Freestyle` items
+    - Advanced Project Options: Depends on Plugins installed, Only display name is available by default.
+    - Pipeline: You can either provide `Pipeline Text` or Pick pipeline from SCM
+
+1.  Choose `Pipeline Script` from dropdown box.
+1.  Copy following text:
+
+    ```groovy
+    pipeline {
+        agent any
+        stages {
+            stage('Build') {
+                steps {
+                    echo 'Building...'
+                }
+            }
+            stage('Test') {
+                steps {
+                    echo 'Testing...'
+                }
+            }
+            stage('Deploy') {
+                steps {
+                    echo 'Deploying...'
+                }
+            }
+        }
+    }
+    ```
+
+1.  Click `Save` Button and then `Build Now`
+1.  Click on Recent build number and use either one option:
+
+    - Open BlueOcean
+    - Pipeline Console
