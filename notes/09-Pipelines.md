@@ -130,7 +130,7 @@ pipeline {
                 git 'https://github.com/jglick/simple-maven-project-with-tests.git'
 
                 // To run Maven on a Windows agent, use
-                bat "mvn -DskipTests clean package"
+                bat "mvn clean package"
             }
 
             post {
