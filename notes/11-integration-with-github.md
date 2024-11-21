@@ -49,16 +49,16 @@ This guide will help you create a **Personal Access Token (PAT)** on GitHub and 
 
 3. **Create a New Pipeline**  
    - Select **Create a new pipeline**.  
-   - Choose **GitHub** as the source provider.
+   - Choose **Git** as the source provider.
 
-4. **Authenticate with GitHub**  
+4. **Enter Your Repository URL**  
+   - Enter the repository URL (containing the `Jenkinsfile`). Example: `https://github.com/mahendra-shinde/sample-library-api`.
+
+5. **Authenticate with Git Repository**  
    - If prompted, add a new GitHub credential:
-     - Use the previously generated PAT as the **Token**.  
-     - Save the credential with an appropriate ID.
-
-5. **Select Your Repository**  
-   - Choose the repository containing the `Jenkinsfile`. Example: `Sample Library API`.
-
+     - Use your GitHub username
+     - Use the previously generated PAT as the **Password**.  
+     
 6. **Scan Repository**  
    - Jenkins will scan the repository and detect the `Jenkinsfile`.  
    - Review the pipeline stages and confirm the configuration.
