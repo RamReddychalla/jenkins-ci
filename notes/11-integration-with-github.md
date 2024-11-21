@@ -42,10 +42,10 @@ This guide will help you create a **Personal Access Token (PAT)** on GitHub and 
 ### Add the GitHub PAT to Jenkins
 
 1. **Log in to Jenkins**  
-   Access your Jenkins instance at `http://<your-jenkins-url>`.
+   Access your Jenkins instance at `http://localhost:8080`.
 
 2. **Navigate to Blue Ocean**  
-   - Click the **Blue Ocean** button from the Jenkins dashboard (or navigate to `http://<your-jenkins-url>/blue`).
+   - Click the **Blue Ocean** button from the Jenkins dashboard (or navigate to `http://localhost:8080/blue`).
 
 3. **Create a New Pipeline**  
    - Select **Create a new pipeline**.  
