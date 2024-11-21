@@ -12,3 +12,4 @@ Sr No | Title | Link
 6 | Jenkins Security (Authentication and Authorization) | [Link](./notes/06-jenkins-security.md)
 7 | Jenkins Jobs : Freestyle Project | [Link](/notes/07-freestyle-jobs.md)
 8 | Collect JUnit Test report | [Link](/notes/08-test-reports.md)
+9 | Declarative Pipelines | [Link](/notes/09-Pipelines.md)
