@@ -13,3 +13,4 @@ Sr No | Title | Link
 7 | Jenkins Jobs : Freestyle Project | [Link](/notes/07-freestyle-jobs.md)
 8 | Collect JUnit Test report | [Link](/notes/08-test-reports.md)
 9 | Declarative Pipelines | [Link](/notes/09-Pipelines.md)
+10 | Pipeline samples (extra) | [Link](notes/10-sample-pipelines.md)
